@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio Animation</title>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.wrapper {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.group {
+  position: relative;
+  width: 100%;
+  padding-top: 60%;
+  margin-bottom: 80px;
+}
+
+.img {
+  position: absolute;
+  width: 36%;
+  height: auto;
+  transition: transform 0.6s cubic-bezier(.4,0,.2,1);
+}
+
+/* TOP STACK */
+.i1 { top: 0%; left: 32%; }
+.i2 { top: 12%; left: 32%; }
+.i3 { top: 24%; left: 32%; }
+.i4 { top: 36%; left: 32%; }
+
+/* BOTTOM STACK */
+.b1 { top: 30%; left: 0%; }
+.b2 { top: 20%; left: 34%; }
+.b3 { top: 0%; left: 40%; }
+.b4 { top: 6%; left: 8%; }
+
+/* HOVER */
+.wrapper:hover .i1 { transform: translateY(-8px); }
+.wrapper:hover .i2 { transform: translateY(-16px); }
+.wrapper:hover .i3 { transform: translateY(-24px); }
+.wrapper:hover .i4 { transform: translateY(-32px); }
+
+.wrapper:hover .b1 { transform: translateY(8px); }
+.wrapper:hover .b2 { transform: translateY(16px); }
+.wrapper:hover .b3 { transform: translateY(24px); }
+.wrapper:hover .b4 { transform: translateY(32px); }
+
+@media (max-width: 768px) {
+  .img { width: 46%; }
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+
+  <div class="group">
+    <img class="img i1" src="https://drive.google.com/uc?export=view&id=19D9EB3MElfe7L5zjj1kAOzvYfYso3zVs" />
+    <img class="img i2" src="https://drive.google.com/uc?export=view&id=1AiOxAC1x24K594Jn0FnFWAQbCWQ-ptEK" />
+    <img class="img i3" src="https://drive.google.com/uc?export=view&id=19dpefiIhpsrBDu06FDz_DUrcxo2Xbq9I" />
+    <img class="img i4" src="https://drive.google.com/uc?export=view&id=11UoDGVN6RtLOA6DxpkkzAyVi0UNfBZEx" />
+  </div>
+
+  <div class="group">
+    <img class="img b1" src="https://drive.google.com/uc?export=view&id=19D9EB3MElfe7L5zjj1kAOzvYfYso3zVs" />
+    <img class="img b2" src="https://drive.google.com/uc?export=view&id=1AiOxAC1x24K594Jn0FnFWAQbCWQ-ptEK" />
+    <img class="img b3" src="https://drive.google.com/uc?export=view&id=19dpefiIhpsrBDu06FDz_DUrcxo2Xbq9I" />
+    <img class="img b4" src="https://drive.google.com/uc?export=view&id=11UoDGVN6RtLOA6DxpkkzAyVi0UNfBZEx" />
+  </div>
+
+</div>
+</body>
+</html>
